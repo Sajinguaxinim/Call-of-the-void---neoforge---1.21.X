@@ -1,8 +1,11 @@
 package net.SajinGuaxinim.CallOfTheVoid;
 
 import net.SajinGuaxinim.CallOfTheVoid.block.ModBlocks;
+import net.SajinGuaxinim.CallOfTheVoid.entity.ModEntities;
+import net.SajinGuaxinim.CallOfTheVoid.entity.client.MinionAboboraRenderer;
 import net.SajinGuaxinim.CallOfTheVoid.item.ModCreativeModeTabs;
 import net.SajinGuaxinim.CallOfTheVoid.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -42,6 +45,7 @@ public class CallOfTheVoid {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -78,6 +82,8 @@ public class CallOfTheVoid {
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
+
+            EntityRenderers.register(ModEntities.MinionAbobora.get(), MinionAboboraRenderer::new);
 
         }
     }

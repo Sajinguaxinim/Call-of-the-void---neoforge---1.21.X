@@ -3,8 +3,12 @@
   "item.callofthevoid.raw_bismuth": "Raw Bismuth",
 
   "block.callofthevoid.bismuth_block": "Block of Bismuth",
-  "block.callofthevoid.bismuth_ore": "Block Ore",
+  "block.callofthevoid.bismuth_ore": "Bismuth Ore",
+  "block.callofthevoid.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
 
   "creativetab.callofthevoid.bismuth_items": "Bismuth Items",
-  "creativetab.callofthevoid.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.callofthevoid.bismuth_blocks": "Bismuth Blocks",
+
+  "entity.mccourse.minionAbobora": "Minion Abobora"
+
 }
