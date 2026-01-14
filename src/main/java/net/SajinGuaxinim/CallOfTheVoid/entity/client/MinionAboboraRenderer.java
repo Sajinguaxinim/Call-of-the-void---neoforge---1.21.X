@@ -16,7 +16,7 @@ public class MinionAboboraRenderer extends MobRenderer<MinionAbobora, MinionAbob
 
     @Override
     public ResourceLocation getTextureLocation(MinionAbobora minionAbobora) {
-        return ResourceLocation.fromNamespaceAndPath(CallOfTheVoid.MOD_ID, "textures/entity/MinionAbobora/minionAbobora.png");
+        return ResourceLocation.fromNamespaceAndPath(CallOfTheVoid.MOD_ID, "textures/entity/minion_abobora/minion_abobora.png");
     }
 
     @Override

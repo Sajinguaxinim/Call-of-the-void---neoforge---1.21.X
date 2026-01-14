@@ -22,8 +22,8 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
-    public static final DeferredItem<Item> MINION_ABOBORA_SPAWN_EGG = ITEMS.register("Minion_Abobora_egg",
-            () -> new DeferredSpawnEggItem(ModEntities.MinionAbobora, 0x31afaf, 0xffac00,
+    public static final DeferredItem<Item> MINION_ABOBORA_EGG = ITEMS.register("minion_abobora_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.MINION_ABOBORA, 0x31afaf, 0xffac00,
                     new Item.Properties()));
 
 }

@@ -83,7 +83,7 @@ public class CallOfTheVoid {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
 
-            EntityRenderers.register(ModEntities.MinionAbobora.get(), MinionAboboraRenderer::new);
+            EntityRenderers.register(ModEntities.MINION_ABOBORA.get(), MinionAboboraRenderer::new);
 
         }
     }

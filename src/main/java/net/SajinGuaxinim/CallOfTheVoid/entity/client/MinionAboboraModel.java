@@ -14,7 +14,7 @@ import net.minecraft.util.Mth;
 
 public class MinionAboboraModel<T extends MinionAbobora> extends HierarchicalModel<T> {
     public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(CallOfTheVoid.MOD_ID, "minionAbobora"), "main");
+            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(CallOfTheVoid.MOD_ID, "minion_abobora"), "main");
     private final ModelPart corpo;
     private final ModelPart torso;
     private final ModelPart bracos;
