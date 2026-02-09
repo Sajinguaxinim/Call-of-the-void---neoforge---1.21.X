@@ -9,6 +9,22 @@
   "creativetab.callofthevoid.bismuth_items": "Bismuth Items",
   "creativetab.callofthevoid.bismuth_blocks": "Bismuth Blocks",
 
-  "entity.mccourse.minionAbobora": "Minion Abobora"
+  "entity.mccourse.minionAbobora": "Minion Abobora",
 
+  "_comment": "=== BARD INSTRUMENTS ===",
+  "item.callofthevoid.viola": "Bard's Viola",
+  "item.callofthevoid.flute": "Bard's Flute",
+  "item.callofthevoid.harp": "Bard's Harp",
+  
+  "_comment2": "=== BARD ARMOR ===",
+  "item.callofthevoid.bard_helmet": "Bard's Hat",
+  "item.callofthevoid.bard_chestplate": "Bard's Tunic",
+  "item.callofthevoid.bard_leggings": "Bard's Pants",
+  "item.callofthevoid.bard_boots": "Bard's Boots",
+
+  "_comment3": "=== KEYBINDINGS ===",
+  "key.categories.callofthevoid.bard": "Call of the Void - Bard",
+  "key.callofthevoid.toggle_mode": "Toggle Bard Mode",
+  "key.callofthevoid.cycle_song": "Cycle Song",
+  "key.callofthevoid.open_minigame": "Open Rhythm Minigame"
 }

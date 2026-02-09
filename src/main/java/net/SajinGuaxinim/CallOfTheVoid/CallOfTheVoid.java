@@ -3,6 +3,7 @@ package net.SajinGuaxinim.CallOfTheVoid;
 import net.SajinGuaxinim.CallOfTheVoid.block.ModBlocks;
 import net.SajinGuaxinim.CallOfTheVoid.entity.ModEntities;
 import net.SajinGuaxinim.CallOfTheVoid.entity.client.MinionAboboraRenderer;
+import net.SajinGuaxinim.CallOfTheVoid.event.ForgeBusEvents;
 import net.SajinGuaxinim.CallOfTheVoid.item.ModCreativeModeTabs;
 import net.SajinGuaxinim.CallOfTheVoid.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -40,6 +41,7 @@ public class CallOfTheVoid {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+        NeoForge.EVENT_BUS.addListener(ForgeBusEvents::onServerTick);
 
         ModCreativeModeTabs.register(modEventBus);
 

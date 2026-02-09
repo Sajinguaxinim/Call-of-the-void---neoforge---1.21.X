@@ -37,6 +37,25 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
                     }).build());
 
+    public static final Supplier<CreativeModeTab> BARD_ITEMS_TAB = CREATIVE_MODE_TAB.register("bard_items_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.VIOLA.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(CallOfTheVoid.MOD_ID, "bismuth_blocks_tab"))
+                    .title(Component.translatable("creativetab.callofthevoid.bard_items"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        // INSTRUMENTOS
+                        output.accept(ModItems.VIOLA);
+                        output.accept(ModItems.FLUTE);
+                        output.accept(ModItems.HARP);
+
+                        // ARMADURAS
+                        output.accept(ModItems.BARD_HELMET);
+                        output.accept(ModItems.BARD_CHESTPLATE);
+                        output.accept(ModItems.BARD_LEGGINGS);
+                        output.accept(ModItems.BARD_BOOTS);
+
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }
